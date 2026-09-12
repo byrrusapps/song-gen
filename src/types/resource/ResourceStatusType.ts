@@ -1,0 +1,1 @@
+export type ResourceStatus = "loading" | "success" | "idle" | "error";

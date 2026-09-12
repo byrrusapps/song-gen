@@ -1,0 +1,36 @@
+{
+  "name": "solid-project",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite dev",
+    "build": "vite build",
+    "start": "node .output/server/index.mjs",
+    "deploy": "npm run build && node scripts/prepare-firebase.mjs && firebase deploy"
+  },
+  "dependencies": {
+    "@google/genai": "^2.16.0",
+    "@material/material-color-utilities": "^0.4.0",
+    "@material/web": "^2.4.1",
+    "@solidjs/router": "^0.16.2",
+    "@solidjs/start": "^2.0.0-alpha.3",
+    "@tailwindcss/vite": "^4.2.2",
+    "@tonejs/midi": "^2.0.28",
+    "algoliasearch": "^5.49.2",
+    "dotenv": "^17.4.2",
+    "firebase": "^12.11.0",
+    "firebase-admin": "^14.2.0",
+    "libphonenumber-js": "^1.13.10",
+    "nitro": "^3.0.260610-beta",
+    "solid-js": "^1.9.14",
+    "stripe": "^22.3.2",
+    "tailwindcss": "^4.2.2",
+    "typescript": "^7.0.2",
+    "uuid": "^14.0.1",
+    "vite": "^8.2.1"
+  },
+  "devDependencies": {
+    "esbuild": "^0.28.2"
+  }
+}

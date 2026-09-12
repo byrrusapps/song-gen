@@ -1,0 +1,267 @@
+/* index.css */
+@import "tailwindcss";
+
+@theme {
+  /* ── Fonts ── */
+  --font-sans: var(--md-ref-typeface-plain);
+  --font-brand: var(--md-ref-typeface-brand);
+
+  /* ── Primary ── */
+  --color-primary:                    var(--md-sys-color-primary);
+  --color-on-primary:                 var(--md-sys-color-on-primary);
+  --color-primary-container:          var(--md-sys-color-primary-container);
+  --color-on-primary-container:       var(--md-sys-color-on-primary-container);
+
+  /* ── Secondary ── */
+  --color-secondary:                  var(--md-sys-color-secondary);
+  --color-on-secondary:               var(--md-sys-color-on-secondary);
+  --color-secondary-container:        var(--md-sys-color-secondary-container);
+  --color-on-secondary-container:     var(--md-sys-color-on-secondary-container);
+
+  /* ── Tertiary ── */
+  --color-tertiary:                   var(--md-sys-color-tertiary);
+  --color-on-tertiary:                var(--md-sys-color-on-tertiary);
+  --color-tertiary-container:         var(--md-sys-color-tertiary-container);
+  --color-on-tertiary-container:      var(--md-sys-color-on-tertiary-container);
+
+  /* ── Error ── */
+  --color-error:                      var(--md-sys-color-error);
+  --color-on-error:                   var(--md-sys-color-on-error);
+  --color-error-container:            var(--md-sys-color-error-container);
+  --color-on-error-container:         var(--md-sys-color-on-error-container);
+
+  /* ── Background ── */
+  --color-background:                 var(--md-sys-color-background);
+  --color-on-background:              var(--md-sys-color-on-background);
+
+  /* ── Surface ── */
+  --color-surface:                    var(--md-sys-color-surface);
+  --color-on-surface:                 var(--md-sys-color-on-surface);
+  --color-surface-variant:            var(--md-sys-color-surface-variant);
+  --color-on-surface-variant:         var(--md-sys-color-on-surface-variant);
+  --color-surface-container-lowest:   var(--md-sys-color-surface-container-lowest);
+  --color-surface-container-low:      var(--md-sys-color-surface-container-low);
+  --color-surface-container:          var(--md-sys-color-surface-container);
+  --color-surface-container-high:     var(--md-sys-color-surface-container-high);
+  --color-surface-container-highest:  var(--md-sys-color-surface-container-highest);
+
+  /* ── Outline ── */
+  --color-outline:                    var(--md-sys-color-outline);
+  --color-outline-variant:            var(--md-sys-color-outline-variant);
+
+  /* ── Inverse ── */
+  --color-inverse-surface:            var(--md-sys-color-inverse-surface);
+  --color-inverse-on-surface:         var(--md-sys-color-inverse-on-surface);
+  --color-inverse-primary:            var(--md-sys-color-inverse-primary);
+
+  /* ── Misc ── */
+  --color-shadow:                     var(--md-sys-color-shadow);
+  --color-scrim:                      var(--md-sys-color-scrim);
+
+  /* =========================================
+     REFERENCE TONAL PALETTES
+     ========================================= */
+
+  /* ── Primary Palette ── */
+  --color-primary-0:    var(--md-ref-palette-primary-0);
+  --color-primary-10:   var(--md-ref-palette-primary-10);
+  --color-primary-20:   var(--md-ref-palette-primary-20);
+  --color-primary-25:   var(--md-ref-palette-primary-25);
+  --color-primary-30:   var(--md-ref-palette-primary-30);
+  --color-primary-35:   var(--md-ref-palette-primary-35);
+  --color-primary-40:   var(--md-ref-palette-primary-40);
+  --color-primary-50:   var(--md-ref-palette-primary-50);
+  --color-primary-60:   var(--md-ref-palette-primary-60);
+  --color-primary-70:   var(--md-ref-palette-primary-70);
+  --color-primary-80:   var(--md-ref-palette-primary-80);
+  --color-primary-90:   var(--md-ref-palette-primary-90);
+  --color-primary-95:   var(--md-ref-palette-primary-95);
+  --color-primary-98:   var(--md-ref-palette-primary-98);
+  --color-primary-99:   var(--md-ref-palette-primary-99);
+  --color-primary-100:  var(--md-ref-palette-primary-100);
+
+  /* ── Secondary Palette ── */
+  --color-secondary-0:    var(--md-ref-palette-secondary-0);
+  --color-secondary-10:   var(--md-ref-palette-secondary-10);
+  --color-secondary-20:   var(--md-ref-palette-secondary-20);
+  --color-secondary-25:   var(--md-ref-palette-secondary-25);
+  --color-secondary-30:   var(--md-ref-palette-secondary-30);
+  --color-secondary-35:   var(--md-ref-palette-secondary-35);
+  --color-secondary-40:   var(--md-ref-palette-secondary-40);
+  --color-secondary-50:   var(--md-ref-palette-secondary-50);
+  --color-secondary-60:   var(--md-ref-palette-secondary-60);
+  --color-secondary-70:   var(--md-ref-palette-secondary-70);
+  --color-secondary-80:   var(--md-ref-palette-secondary-80);
+  --color-secondary-90:   var(--md-ref-palette-secondary-90);
+  --color-secondary-95:   var(--md-ref-palette-secondary-95);
+  --color-secondary-98:   var(--md-ref-palette-secondary-98);
+  --color-secondary-99:   var(--md-ref-palette-secondary-99);
+  --color-secondary-100:  var(--md-ref-palette-secondary-100);
+
+  /* ── Tertiary Palette ── */
+  --color-tertiary-0:    var(--md-ref-palette-tertiary-0);
+  --color-tertiary-10:   var(--md-ref-palette-tertiary-10);
+  --color-tertiary-20:   var(--md-ref-palette-tertiary-20);
+  --color-tertiary-25:   var(--md-ref-palette-tertiary-25);
+  --color-tertiary-30:   var(--md-ref-palette-tertiary-30);
+  --color-tertiary-35:   var(--md-ref-palette-tertiary-35);
+  --color-tertiary-40:   var(--md-ref-palette-tertiary-40);
+  --color-tertiary-50:   var(--md-ref-palette-tertiary-50);
+  --color-tertiary-60:   var(--md-ref-palette-tertiary-60);
+  --color-tertiary-70:   var(--md-ref-palette-tertiary-70);
+  --color-tertiary-80:   var(--md-ref-palette-tertiary-80);
+  --color-tertiary-90:   var(--md-ref-palette-tertiary-90);
+  --color-tertiary-95:   var(--md-ref-palette-tertiary-95);
+  --color-tertiary-98:   var(--md-ref-palette-tertiary-98);
+  --color-tertiary-99:   var(--md-ref-palette-tertiary-99);
+  --color-tertiary-100:  var(--md-ref-palette-tertiary-100);
+
+  /* ── Error Palette ── */
+  --color-error-0:    var(--md-ref-palette-error-0);
+  --color-error-10:   var(--md-ref-palette-error-10);
+  --color-error-20:   var(--md-ref-palette-error-20);
+  --color-error-25:   var(--md-ref-palette-error-25);
+  --color-error-30:   var(--md-ref-palette-error-30);
+  --color-error-35:   var(--md-ref-palette-error-35);
+  --color-error-40:   var(--md-ref-palette-error-40);
+  --color-error-50:   var(--md-ref-palette-error-50);
+  --color-error-60:   var(--md-ref-palette-error-60);
+  --color-error-70:   var(--md-ref-palette-error-70);
+  --color-error-80:   var(--md-ref-palette-error-80);
+  --color-error-90:   var(--md-ref-palette-error-90);
+  --color-error-95:   var(--md-ref-palette-error-95);
+  --color-error-98:   var(--md-ref-palette-error-98);
+  --color-error-99:   var(--md-ref-palette-error-99);
+  --color-error-100:  var(--md-ref-palette-error-100);
+
+  /* ── Neutral Palette ── */
+  --color-neutral-0:    var(--md-ref-palette-neutral-0);
+  --color-neutral-10:   var(--md-ref-palette-neutral-10);
+  --color-neutral-20:   var(--md-ref-palette-neutral-20);
+  --color-neutral-25:   var(--md-ref-palette-neutral-25);
+  --color-neutral-30:   var(--md-ref-palette-neutral-30);
+  --color-neutral-35:   var(--md-ref-palette-neutral-35);
+  --color-neutral-40:   var(--md-ref-palette-neutral-40);
+  --color-neutral-50:   var(--md-ref-palette-neutral-50);
+  --color-neutral-60:   var(--md-ref-palette-neutral-60);
+  --color-neutral-70:   var(--md-ref-palette-neutral-70);
+  --color-neutral-80:   var(--md-ref-palette-neutral-80);
+  --color-neutral-90:   var(--md-ref-palette-neutral-90);
+  --color-neutral-95:   var(--md-ref-palette-neutral-95);
+  --color-neutral-98:   var(--md-ref-palette-neutral-98);
+  --color-neutral-99:   var(--md-ref-palette-neutral-99);
+  --color-neutral-100:  var(--md-ref-palette-neutral-100);
+
+  /* ── Neutral Variant Palette ── */
+  --color-neutral-variant-0:    var(--md-ref-palette-neutral-variant-0);
+  --color-neutral-variant-10:   var(--md-ref-palette-neutral-variant-10);
+  --color-neutral-variant-20:   var(--md-ref-palette-neutral-variant-20);
+  --color-neutral-variant-25:   var(--md-ref-palette-neutral-variant-25);
+  --color-neutral-variant-30:   var(--md-ref-palette-neutral-variant-30);
+  --color-neutral-variant-35:   var(--md-ref-palette-neutral-variant-35);
+  --color-neutral-variant-40:   var(--md-ref-palette-neutral-variant-40);
+  --color-neutral-variant-50:   var(--md-ref-palette-neutral-variant-50);
+  --color-neutral-variant-60:   var(--md-ref-palette-neutral-variant-60);
+  --color-neutral-variant-70:   var(--md-ref-palette-neutral-variant-70);
+  --color-neutral-variant-80:   var(--md-ref-palette-neutral-variant-80);
+  --color-neutral-variant-90:   var(--md-ref-palette-neutral-variant-90);
+  --color-neutral-variant-95:   var(--md-ref-palette-neutral-variant-95);
+  --color-neutral-variant-98:   var(--md-ref-palette-neutral-variant-98);
+  --color-neutral-variant-99:   var(--md-ref-palette-neutral-variant-99);
+  --color-neutral-variant-100:  var(--md-ref-palette-neutral-variant-100);
+}
+
+:root {
+--md-ref-typeface-brand: "Akt";
+--md-ref-typeface-plain: "Akt";
+}
+
+img{
+pointer-events: none !important;
+}
+
+html, body{
+max-width: 100vw;
+font-family: var(--md-ref-typeface-brand);
+}
+
+body {
+  position: absolute;
+  width: 100vw;
+  min-height: 100vh;
+  top: 0;
+  left: 0;
+  margin: 0;
+  padding: 0;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering:optimizeLegibility;
+} 
+
+::-webkit-scrollbar{
+display:none;
+}
+
+input[type="search"]::-webkit-search-decoration,
+input[type="search"]::-webkit-search-cancel-button,
+input[type="search"]::-webkit-search-results-button,
+input[type="search"]::-webkit-search-results-decoration {
+  -webkit-appearance: none;
+  appearance: none;
+}
+
+
+.material-symbols-rounded {
+  font-family: 'Material Symbols Rounded';
+  font-weight: normal;
+  font-style: normal;
+  font-size: 24px;
+  line-height: 1;
+  letter-spacing: normal;
+  text-transform: none;
+  white-space: nowrap;
+  direction: ltr;
+  text-transform: lowercase;
+  font-feature-settings: 'liga';
+  -webkit-font-feature-settings: 'liga';
+  -webkit-font-smoothing: antialiased;
+}
+
+/* Outlined version */
+.rounded-outlined {
+  font-variation-settings:
+    'FILL' 0,
+    'wght' 400,
+    'GRAD' 0,
+    'opsz' 24;
+}
+
+/* Filled version */
+.rounded-filled {
+  font-variation-settings:
+    'FILL' 1,
+    'wght' 400,
+    'GRAD' 0,
+    'opsz' 24;
+}
+
+.rounded-thin {
+  font-variation-settings:
+    'FILL' 0,
+    'wght' 100,
+    'GRAD' 0,
+    'opsz' 24;
+}
+
+.rounded-thin-filled {
+  font-variation-settings:
+    'FILL' 1,
+    'wght' 100,
+    'GRAD' 0,
+    'opsz' 24;
+}
+
+@keyframes slideUp {
+  from { transform: translateY(100%); }
+  to   { transform: translateY(0); }
+}

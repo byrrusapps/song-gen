@@ -1,0 +1,21 @@
+{
+  "hosting": {
+    "site": "solid-project",
+    "public": ".output/public",
+    "ignore": ["firebase.json", "**/.*", "**/node_modules/**"],
+    "rewrites": [
+      {
+        "source": "**",
+        "function": "server"
+      }
+    ]
+  },
+  "functions": {
+    "source": ".output/server",
+    "runtime": "nodejs20"
+  },
+    "firestore": {
+    "rules": "firestore.rules",
+    "indexes": "firestore.indexes.json"
+  }
+}

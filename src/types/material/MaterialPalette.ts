@@ -1,0 +1,1 @@
+export type MaterialPalette = 'primary' | 'secondary' | 'tertiary';

@@ -1,0 +1,23 @@
+env:
+  # Sensitive data pulled safely from Secret Manager
+  - variable: VITE_API_KEY
+    secret: VITE_API_KEY
+
+  - variable: VITE_APP_ID
+    secret: VITE_APP_ID
+
+  - variable: VITE_MESSAGING_SENDER_ID
+    secret: VITE_MESSAGING_SENDER_ID
+
+  - variable: VITE_MEASUREMENT_ID
+    secret: VITE_MEASUREMENT_ID
+
+  # Non-sensitive client configurations written safely in plain text
+  - variable: VITE_PROJECT_ID
+    value: "byrrusos"
+  - variable: VITE_AUTH_DOMAIN
+    value: "byrrusos.firebaseapp.com"
+  - variable: VITE_STORAGE_BUCKET
+    value: "byrrusos.firebasestorage.app"
+  - variable: BASE_URL
+    value: "https://byrrusos.europe-west4.hosted.app"
