@@ -10,6 +10,8 @@ lerna-debug.log*
 node_modules
 dist
 dist-ssr
+.output
+.apphosting
 *.local
 
 # Editor directories and files
@@ -32,3 +34,4 @@ dist-ssr
 
 # md files
 *.md
+!project-plan.md
